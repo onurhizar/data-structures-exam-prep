@@ -11,6 +11,7 @@
 * Bag
 * List
 * Queue
+* Deque (Double Ended Queue)
 * PriorityQueue
 * Stack
 * Tree & BST

@@ -22,8 +22,8 @@ public class ArrayDictionary<K, V> implements IDictionary<K, V> {
         }
         else { // else, add a new entry to the array
             data[size] = new Entry<>(key, value);
+            size++; // increase size only when adding new, not updating
         }
-        size++;
         return value;
     }
 
@@ -74,6 +74,7 @@ public class ArrayDictionary<K, V> implements IDictionary<K, V> {
         grades.add("Alice", 80);
         grades.add("Bob", 75);
         grades.add("Clair", 99);
+        grades.add("Bob", 100); // updates
 
         System.out.println("Dict Size: " + grades.getSize());
         System.out.println("Value: " + grades.getValue("Bob"));
