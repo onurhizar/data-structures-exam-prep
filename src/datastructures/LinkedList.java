@@ -5,9 +5,10 @@ package datastructures;
 ---------------------
 void add(T newItem);
 Node<T> getNode();
-T get();
+T get(int index);
 T remove(); // removes last item
 T remove(int index);
+
 */
 
 public class LinkedList<T> {
@@ -48,9 +49,7 @@ public class LinkedList<T> {
      * @param index Starts from 0, to length-1
      */
     public Node<T> getNode(int index){
-        if (index >= length) return null; // TODO THROW ERROR?
-        if (index < 0) return null; // TODO THROW ERROR?
-        if (index==0) return firstNode;
+        if (index < 0 || index >= length) return null; // TODO THROW ERROR?
 
         Node<T> currentNode = firstNode;
         // to get index'th node we need to traverse next "index times"
@@ -108,7 +107,9 @@ public class LinkedList<T> {
         names.add("onur");
         names.add("burak");
         names.add("enes");
+
         names.remove(1);
+        System.out.println(names.get(0));
         System.out.println(names.get(1));
     }
 }
