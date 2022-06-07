@@ -1,5 +1,13 @@
 package datastructures;
 
+/*
+     Methods
+------------------
+push(T item)
+pop()
+getLength()
+
+*/
 public class LinkedStack<T> {
     private int length = 0;
     Node<T> lastNode;

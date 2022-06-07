@@ -6,6 +6,7 @@
 * Comparable
 * Recursion
 
+
 ## Main Data Structures
 * Bag
 * List
@@ -15,3 +16,8 @@
 * Tree & BST
 * Dictionary, Hash Map
 
+
+## Personal Notes
+While creating array with generics, we use casting as like:
+
+`data = (Entry<K, V>[]) new Entry[capacity];`
