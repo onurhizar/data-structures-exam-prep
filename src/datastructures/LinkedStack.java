@@ -3,9 +3,10 @@ package datastructures;
 /*
      Methods
 ------------------
-push(T item)
-pop()
-getLength()
+void push(T item);
+T pop();
+T peek(); // returns last item without popping
+int getLength();
 
 */
 public class LinkedStack<T> {
@@ -39,6 +40,8 @@ public class LinkedStack<T> {
         length--;
         return removedNode.data;
     }
+
+    public T peek(){ return lastNode.data; }
 
     public int getLength() { return length; }
 

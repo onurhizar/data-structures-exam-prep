@@ -3,6 +3,13 @@ package datastructures;
 /*
 LIFO Structure : Last in First Out
 New item enter from back, leaves from front.
+
+       Methods
+----------------------
+void enqueue(T item);
+T dequeue();
+int getLength();
+
 */
 
 public class LinkedQueue<T> {

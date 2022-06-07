@@ -1,13 +1,13 @@
 package datastructures;
 
 /*
-           Methods
-    ---------------------
-    add(T newItem)
-    getNode
-    get
-    remove()
-    remove(int index)
+       Methods
+---------------------
+void add(T newItem);
+Node<T> getNode();
+T get();
+T remove(); // removes last item
+T remove(int index);
 */
 
 public class LinkedList<T> {
