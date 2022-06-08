@@ -1,5 +1,7 @@
 package datastructures.dictionary;
 
+import interfaces.IDictionary;
+
 public class ArrayDictionary<K, V> implements IDictionary<K, V> {
     int size = 0;
     int capacity = 8;

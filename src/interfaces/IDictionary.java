@@ -1,4 +1,4 @@
-package datastructures.dictionary;
+package interfaces;
 
 /* TODO
 public Iterator<K> getKeyIterator();

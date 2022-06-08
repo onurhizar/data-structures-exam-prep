@@ -12,6 +12,8 @@ int getSize();
 
 */
 
+import interfaces.IDictionary;
+
 public class LinkedDictionary<K, V> implements IDictionary<K,V> {
     int size = 0;
     Node<K,V> head;
