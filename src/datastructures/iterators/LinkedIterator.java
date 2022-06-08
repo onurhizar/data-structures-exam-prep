@@ -41,7 +41,7 @@ public class LinkedIterator<T> implements Iterator<T> {
         n2.setNext(n3);
         n3.setNext(n4);
 
-        LinkedIterator<String> iter = new LinkedIterator<>(n1);
+        Iterator<String> iter = new LinkedIterator<>(n1);
 
         while(iter.hasNext()) {
             String currentItem = iter.next();

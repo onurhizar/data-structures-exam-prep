@@ -45,7 +45,7 @@ public class ArrayIterator<T> implements Iterator<T> {
     public static void main(String[] args) {
         // TESTING
         String[] names = {"Alice", "Bob", "Carol", "David", "Eva"};
-        ArrayIterator<String> iter = new ArrayIterator<>(names);
+        Iterator<String> iter = new ArrayIterator<>(names);
 
         while (iter.hasNext()) {
             String current = iter.next();

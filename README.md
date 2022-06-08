@@ -74,3 +74,24 @@ But in java.utils.HashMap it uses
 * remove 
 * clear 
 * size
+
+<hr>
+
+Both LinkedList and ArrayList has `iterator()` method 
+which returns corresponding type iterator based on 
+Iterator interface.
+```
+// ArrayList's iterator method
+public Iterator<T> iterator(){
+    return new ArrayIterator<T>(array);
+}
+
+// LinkedList's iterator method
+public Iterator<T> iterator(){
+    return new LinkedIterator<T>(firstNode);
+}
+```
+
+As you see, both return the interface type, 
+not implementations from it.
+
