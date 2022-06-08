@@ -9,7 +9,8 @@
 [LinkedIterator](/src/datastructures/iterators/LinkedIterator.java)
 * Comparable
 * Recursion
-
+* Binary Search Tree
+* Circular Structure
 
 ## Main Data Structures
 * Bag

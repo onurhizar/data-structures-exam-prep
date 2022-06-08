@@ -102,6 +102,10 @@ public class LinkedList<T> {
     }
 
 
+    public int getLength() {
+        return length;
+    }
+
     public static void main(String[] args) {
         LinkedList<String> names = new LinkedList<>();
         names.add("onur");
