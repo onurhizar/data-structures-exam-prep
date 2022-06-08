@@ -25,8 +25,8 @@ public class BinaryTree<T> {
 
     public void preorderTraverse(BinaryTreeNode<T> node){
         if (node != null) {
-            inorderTraverse(node.getLeftChild());
             System.out.println(node.getData());
+            inorderTraverse(node.getLeftChild());
             inorderTraverse(node.getRightChild());
         }
     }
@@ -45,6 +45,10 @@ public class BinaryTree<T> {
         sagKol.setRightChild(new BinaryTreeNode<>("Sağ B"));
 
         BinaryTree<String> strTree = new BinaryTree<>();
+        System.out.println("InOrder Traverse\n");
         strTree.inorderTraverse(tree);
+
+        System.out.println("\nPreOrder Traverse\n");
+        strTree.preorderTraverse(tree);
     }
 }
