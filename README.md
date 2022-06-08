@@ -2,6 +2,8 @@
 
 [Jump to personal notes](#personal-notes)
 
+TODO: Abstraction, public to private some attributes.
+
 ## Others
 * Generics ✅
 * Iterator ✅ 
@@ -11,6 +13,7 @@
 * Recursion
 * Binary Search Tree
 * Circular Structure
+* Comparable Interface (TODO)
 
 ## Main Data Structures
 * Bag
@@ -96,3 +99,24 @@ public Iterator<T> iterator(){
 As you see, both return the interface type, 
 not implementations from it.
 
+<hr>
+
+## Deque
+Java Deque Interface Methods
+```
+addFirst, offerFirst
+addLast, offerLast
+removeFirst, pollFirst
+removeLast, pollLast
+getFirst, peekFirst
+getLast, peekLast
+isEmpty, clear, size
+```
+
+<hr>
+
+One line if else usage @ LinkedDeque:
+```
+if (isEmpty()) lastNode = newNode;
+else firstNode.previous = newNode;
+```

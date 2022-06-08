@@ -9,6 +9,9 @@ New item enter from back, leaves from front.
 void enqueue(T item);
 T dequeue();
 int getLength();
+T getFront();
+boolean isEmpty();
+void clear();
 
 */
 
