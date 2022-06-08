@@ -11,13 +11,13 @@
 
 ## Main Data Structures
 * Bag
-* List ✅ 
-* Queue ✅
+* List ✅ [LinkedList](/src/datastructures/LinkedList.java)
+* Queue ✅ [LinkedQueue](/src/datastructures/LinkedQueue.java)
 * Deque (Double Ended Queue)
 * PriorityQueue
-* Stack ✅
-* Tree & BST ✅
-* Dictionary ✅
+* Stack ✅ [LinkedStack](/src/datastructures/LinkedStack.java)
+* Tree & BST ✅ [BinaryTree](/src/datastructures/tree/BinaryTree.java)
+* Dictionary ✅ [LinkedDictionary](/src/datastructures/dictionary/LinkedDictionary.java)
 * HashMap (hashing, hash table?)
 
 Methods of HashMap: put, get, remove, clear, size
@@ -72,5 +72,3 @@ But in java.utils.HashMap it uses
 * remove 
 * clear 
 * size
-
-test link: [LinkedList](/src/datastructures/LinkedList.java)
