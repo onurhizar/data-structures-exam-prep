@@ -23,7 +23,7 @@
 Methods of HashMap: put, get, remove, clear, size
 
 
-<h2 id="personal-notes"> Personal Notes </h2>
+<h2 id="personal-notes">Personal Notes</h2>
 
 Iterate over items with for loop syntax:
 ```
