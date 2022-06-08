@@ -120,3 +120,29 @@ One line if else usage @ LinkedDeque:
 if (isEmpty()) lastNode = newNode;
 else firstNode.previous = newNode;
 ```
+
+<hr>
+
+Find successor: first take right, then go all left
+```
+// the first greater value in leaves after given node
+public static Integer findSuccessor(BinaryTreeNode<Integer> current){
+    if (current.isLeaf()) return current.data;
+    current = current.getRightChild();
+    while (!current.isLeaf()) current = current.getLeftChild();
+    System.out.println("Successor value: "+current.data);
+    return current.data;
+}
+```
+
+Find Predecessor: first take left, then go all right
+```
+// the last lesser value in leaves before given node
+public static Integer findPredecessor(BinaryTreeNode<Integer> current){
+    if (current.isLeaf()) return current.data;
+    current = current.getLeftChild(); // first, take left
+    while (!current.isLeaf()) current=current.getRightChild(); // then all go right
+    System.out.println("Predecessor value: "+current.data);
+    return current.data;
+}
+```

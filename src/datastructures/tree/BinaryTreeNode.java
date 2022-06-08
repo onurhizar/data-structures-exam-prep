@@ -28,6 +28,6 @@ public class BinaryTreeNode<T> {
     public boolean hasLeftChild() { return leftChild!= null; }
     public boolean hasRightChild() { return rightChild!= null; }
 
-    public boolean isLeaf() { return leftChild!=null && rightChild!= null; }
+    public boolean isLeaf() { return leftChild==null && rightChild== null; }
 
 }
