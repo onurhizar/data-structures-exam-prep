@@ -3,8 +3,10 @@
 [Jump to personal notes](#personal-notes)
 
 ## Others
-* Generics
-* Iterator
+* Generics ✅
+* Iterator ✅ 
+[ArrayIterator](/src/datastructures/iterators/ArrayIterator.java) ,
+[LinkedIterator](/src/datastructures/iterators/LinkedIterator.java)
 * Comparable
 * Recursion
 
