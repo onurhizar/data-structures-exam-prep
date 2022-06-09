@@ -10,8 +10,8 @@ TODO: Abstraction, public to private some attributes.
 [ArrayIterator](/src/datastructures/iterators/ArrayIterator.java) ,
 [LinkedIterator](/src/datastructures/iterators/LinkedIterator.java)
 * Comparable
-* Recursion
-* Binary Search Tree
+* Recursion ✅ 
+* Binary Search Tree ✅
 * Circular Structure
 * Comparable Interface (TODO)
 
@@ -19,7 +19,7 @@ TODO: Abstraction, public to private some attributes.
 * Bag
 * List ✅ [LinkedList](/src/datastructures/LinkedList.java)
 * Queue ✅ [LinkedQueue](/src/datastructures/LinkedQueue.java)
-* Deque (Double Ended Queue)
+* Deque ✅ [LinkedDeque](/src/datastructures/LinkedDeque.java)
 * PriorityQueue
 * Stack ✅ [LinkedStack](/src/datastructures/LinkedStack.java)
 * Tree & BST ✅ [BinaryTree](/src/datastructures/tree/BinaryTree.java)

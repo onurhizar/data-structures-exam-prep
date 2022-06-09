@@ -25,7 +25,7 @@ public class HashMap {
         int hashCode = hashCode(student.name);
 
         // 2: Compress with using modulo
-        int compressedHash = hashCode % DEFAULT_CAPACITY;
+        int compressedHash = hashCode % capacity;
 
         // 3: Check if LinkedList is initialized at database[index]
         LinkedList<Student> listAtIndex = database[compressedHash];
@@ -51,7 +51,7 @@ public class HashMap {
 
     public Student get(String name){
         int hashCode = hashCode(name);
-        int compressedHash = hashCode % DEFAULT_CAPACITY;
+        int compressedHash = hashCode % capacity;
         LinkedList<Student> listAtIndex = database[compressedHash];
 
         if (listAtIndex!=null) { // if list is not empty, traverse
