@@ -24,7 +24,7 @@ TODO: Abstraction, public to private some attributes.
 * Stack ✅ [LinkedStack](/src/datastructures/LinkedStack.java)
 * Tree & BST ✅ [BinaryTree](/src/datastructures/tree/BinaryTree.java)
 * Dictionary ✅ [LinkedDictionary](/src/datastructures/dictionary/LinkedDictionary.java)
-* HashMap (hashing, hash table?)
+* HashMap ✅ [HashMap](/src/datastructures/dictionary/HashMap.java)
 
 Methods of HashMap: put, get, remove, clear, size
 
