@@ -1,5 +1,7 @@
 package datastructures.tree;
 
+import interfaces.Iterator;
+
 public class BinaryTree<T> {
     BinaryTreeNode<T> root;
 
@@ -14,6 +16,9 @@ public class BinaryTree<T> {
         root = new BinaryTreeNode<>(rootData);
     }
 
+    public Iterator<T> iterator(){
+        return new BTInorderIterator<>(root);
+    }
 
     public void inorderTraverse(BinaryTreeNode<T> node){
         if (node != null) {
@@ -30,6 +35,16 @@ public class BinaryTree<T> {
             inorderTraverse(node.getRightChild());
         }
     }
+
+
+    // counts occurrences in tree
+    public int count(T searchingValue, BinaryTreeNode<T> rootNode){
+        return count(searchingValue, rootNode, 0);
+    }
+    public int count(T searchingValue, BinaryTreeNode<T> rootNode, int count){
+        return -1111; // TODO
+    }
+
 
     public static void main(String[] args) {
         BinaryTreeNode<String> tree = new BinaryTreeNode<>("BOSS");
@@ -50,5 +65,8 @@ public class BinaryTree<T> {
 
         System.out.println("\nPreOrder Traverse\n");
         strTree.preorderTraverse(tree);
+
+        Iterator<String> iter = strTree.iterator();
+        while (iter.hasNext()) System.out.println(iter.next());
     }
 }
